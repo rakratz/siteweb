@@ -1,0 +1,106 @@
+/* Resetando margens e preenchimentos para os elementos básicos */
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; /* Remove os marcadores de lista */
+  font-size: 1.2rem; /* Define um tamanho base para o texto */
+  font-family: Arial, sans-serif; /* Define a família de fontes */
+}
+
+/* Estilizando links */
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #fff; /* Define a cor branca para os links */
+  transition: color 0.3s ease-in-out; /* Transição suave da cor */
+}
+
+/* Estilização do cabeçalho */
+.header {
+  display: flex; /* Ativa o flexbox */
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+  background-color: #333; /* Cor de fundo escura */
+  justify-content: space-between; /* Distribui os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Menu de navegação */
+.menu {
+  display: flex; /* Exibe os itens do menu em linha */
+}
+
+.menu li {
+  margin-left: 20px; /* Adiciona espaçamento entre os itens do menu */
+}
+
+.menu li a {
+  display: block; /* Garante que os links ocupem toda a área do elemento */
+  padding: 10px; /* Adiciona espaçamento interno aos links */
+}
+
+a:hover {
+  color: #ffcc00; /* Muda a cor do texto ao passar o mouse */
+  background-color: #3f3f3f;
+}
+
+/* Estilizando o título principal */
+h1 {
+  text-align: center; /* Centraliza o título */
+  margin-top: 20px; /* Adiciona espaçamento superior */
+}
+
+/* Ajustando imagens */
+img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+  display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* Estilização da seção flexível */
+.flex {
+  display: flex; /* Ativa o flexbox */
+  flex-wrap: wrap; /* Permite que os elementos se ajustem automaticamente */
+  max-width: 732px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.flex > div {
+  flex: 1 1 200px; /* Define o comportamento do flexbox */
+  margin: 10px; /* Adiciona espaçamento entre os itens */
+}
+
+.flex img {
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+  }
+  
+.flex img:hover {
+    transform: scale(1.1); /* Aumenta levemente a imagem ao passar o mouse */
+}
+
+.flex > div {
+  position: relative; /* Permite posicionar a legenda em relação à imagem */
+  overflow: hidden; /* Garante que nada ultrapasse os limites do contêiner */
+}
+
+.flex p {
+  position: absolute;
+  bottom: 0; /* Fixa a legenda na parte inferior da imagem */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com transparência */
+  color: white; /* Texto branco para contraste */
+  text-align: center;
+  padding: 8px 0; /* Espaçamento interno */
+  font-size: 1rem;
+  font-weight: bold; /* Deixa a legenda mais destacada */
+}
+
+/* Estilização do rodapé */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  width: 100%;
+}
